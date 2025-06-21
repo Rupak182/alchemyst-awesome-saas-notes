@@ -31,13 +31,22 @@ The server requires a Google API key for functionality. You need to create a `.e
    cd server
    ```
 
-2. Create a `.env` file with the following content:
+2. Create a `.env` file in server directory with the following content:
    ```properties
-   GOOGLE_API_KEY=your_google_api_key_here
+   BASE_URL= 'https://generativelanguage.googleapis.com/v1beta/openai/'
+   API_KEY=your_google_api_key_here
+   MODEL=gemini-2.5-flash (or any othermodel which is multi modal)
    PORT=3000
    ```
 
-3. Replace `your_google_api_key_here` with your actual Google API key.
+
+4. Replace `your_google_api_key_here` with your actual Google API key.
+
+5. Create a `.env` file in client directory with the following content:
+   ```properties
+   VITE_BASE_URL=http://locahost:3000 (or any other url based on server configuration)
+   ```
+
 
 ### Getting a Google API Key (Free)
 

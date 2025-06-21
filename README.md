@@ -35,7 +35,7 @@ The server requires a Google API key for functionality. You need to create a `.e
    ```properties
    BASE_URL= 'https://generativelanguage.googleapis.com/v1beta/openai/'
    API_KEY=your_google_api_key_here
-   MODEL=gemini-2.5-flash (or any othermodel which is multi modal)
+   MODEL=gemini-2.5-flash (or any other model which is multi modal)
    PORT=3000
    ```
 

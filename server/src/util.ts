@@ -7,16 +7,17 @@ import { mdToPdf } from "md-to-pdf";
 
 import * as dotenv from 'dotenv';
 import fs from 'fs';
+import { ChatOpenAI } from "@langchain/openai";
 
 dotenv.config();
 
-// const llm = new ChatOpenAI({
-//     model: process.env.MODEL,
-//     apiKey: process.env.API_KEY ,
-//     configuration: {
-//       baseURL: process.env.BASE_URL,
-//     },
-//   });
+const llm = new ChatOpenAI({
+    model: process.env.MODEL,
+    apiKey: process.env.API_KEY ,
+    configuration: {
+      baseURL: process.env.BASE_URL,
+    },
+  });
 
 
 
@@ -26,9 +27,9 @@ function imageToBase64(imagePath: string) {
 }
 
 
-const llm = new ChatGoogleGenerativeAI({
-    model: "gemini-2.5-flash",
-});
+// const llm = new ChatGoogleGenerativeAI({
+//     model: "gemini-2.5-flash",
+// });
 
 
 const questionExtractLLM = llm.withStructuredOutput(z.array(questionSchema))
@@ -178,7 +179,7 @@ async function run() {
 
 // Use it for testing the function seperately
 
-// await run().catch((error) => {
-//     console.error("Error during model invocation:", error);
-//     process.exit(1);
-// });
+await run().catch((error) => {
+    console.error("Error during model invocation:", error);
+    process.exit(1);
+});

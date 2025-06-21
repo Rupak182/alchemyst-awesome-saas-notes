@@ -1,6 +1,8 @@
 # Question Paper To PDF Notes Generator
 
-A full-stack application with a React client and Express TypeScript server for processing images and generating PDFs.
+A full-stack application with a React client and Express TypeScript server for processing an question paper image and generating PDF note.
+
+https://github.com/user-attachments/assets/dda9fdc6-53f6-46e3-a74a-4a7c79fa0374
 
 ## Project Structure
 

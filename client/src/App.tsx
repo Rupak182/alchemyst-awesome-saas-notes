@@ -4,7 +4,6 @@ const App: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [isDragOver, setIsDragOver] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setFile(e.target.files[0]);
@@ -38,7 +37,8 @@ const App: React.FC = () => {
     formData.append('image', file);
 
     try {
-      const response = await fetch('http://localhost:3000/upload', {
+      const url=import.meta.env.VITE_BASE_URL
+      const response = await fetch(url+'/upload', {
         method: 'POST',
         body: formData,
       });

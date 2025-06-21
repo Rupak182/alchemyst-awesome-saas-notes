@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec \"node --loader ts-node/esm\" src/main.ts",
-    "start:build": "tsc -w"
+    "build": "tsc",
+    "start": "node dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +33,7 @@
     "install": "^0.13.0",
     "nodemon": "^3.1.10",
     "npm": "^11.4.2",
+    "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }

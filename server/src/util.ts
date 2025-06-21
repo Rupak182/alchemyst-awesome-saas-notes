@@ -179,7 +179,7 @@ async function run() {
 
 // Use it for testing the function seperately
 
-await run().catch((error) => {
-    console.error("Error during model invocation:", error);
-    process.exit(1);
-});
+// await run().catch((error) => {
+//     console.error("Error during model invocation:", error);
+//     process.exit(1);
+// });

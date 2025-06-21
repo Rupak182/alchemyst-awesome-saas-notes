@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext", // or "nodenext" for Node.js ESM support
+    "moduleResolution": "nodenext", // or "node16" for Node.js ESM support
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext"] 
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "esm": true
+  }
+}

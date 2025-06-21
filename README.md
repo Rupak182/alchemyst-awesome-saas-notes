@@ -1,4 +1,4 @@
-# Exam Project
+# Question Paper To PDF Notes Generator
 
 A full-stack application with a React client and Express TypeScript server for processing images and generating PDFs.
 

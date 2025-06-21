@@ -110,7 +110,7 @@ The client will start on `http://localhost:5173` (or another available port)
 - **Multer** - File upload handling
 - **CORS** - Cross-origin resource sharing
 - **dotenv** - Environment variable management
-- **LangChain** - AI/ML framework integration
+- **LangChain and Langgraph** - AI/ML framework integration
 - **md-to-pdf** - Markdown to PDF conversion
 
 ## Development
